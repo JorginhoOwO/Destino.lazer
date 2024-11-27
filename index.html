@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino&Lazer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container_header">
+            <h1> Destino.Lazer</h1>
+        </div>
+    <header>
+        <div class="container_header_secundario">
+            <div class="texto">
+                <h2>Gerenciamento financeiro de Lazer</h2>
+                <p>
+                    Viajar e aproveitar momentos de lazer são experiências que enriquecem nossa vida, mas é fundamental equilibrar 
+                    o orçamento para que esses momentos não gerem dívidas ou preocupações futuras. Aqui estão algumas dicas 
+                    práticas de gerenciamento financeiro para garantir que você possa aproveitar ao máximo sem comprometer sua saúde financeira:
+                </p>
+            <input type="number" id="valor" placeholder="Digite seu orçamento" />
+            <button onclick="filtrarDestinos()">Buscar</button>
+            </div>
+            <div class="container_img">
+                <img src="img/cartom.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="destino_disponivel">
+        <h1>Destinos Disponiveis</h1>
+    </div>
+    <main>
+        <section id="destinos">
+            <div class="destino" data-preco="400">
+                <div class="imgPais">
+                    <img src="img/gramado.jpg" alt="">
+                </div>
+                <h2>Gramado - Brasil</h2>
+                <p>
+                    2 dias <br><br>
+                    Hotel; <strong>R$ 250,00</strong> <br>
+                    Alimentação: <strong>R$ 150,00</strong>
+                </p>
+                <p>R$ 400,00</p>
+            </div>
+            <div class="destino" data-preco="2000">
+                <div class="imgPais">
+                    <img src="img/SaoPaulo.jpeg" alt="">
+                </div>
+                <h2>São Paulo - Brasil</h2>
+                <p>
+                    3 dias <br><br>
+                    Hotel; <strong>R$ 1.000,00</strong> <br>
+                    Passagem: <strong>R$ 650,00</strong><br>
+                    Alimentação: <strong>R$ 350,00</strong>
+                </p>
+                <p>R$ 2.000,00</p>
+            </div>
+            <div class="destino" data-preco="3000">
+                <div class="imgPais">
+                    <img src="img/RioDeJaneiro.jpeg" alt="">
+                </div>
+                <h2>Rio de Janeiro - Brasil</h2>
+                <p>
+                    3 dias <br><br>
+                    Hotel; <strong>R$ 1.200,00</strong> <br>
+                    Passagem: <strong>R$ 1.250,00</strong><br>
+                    Alimentação: <strong>R$ 550,00</strong>
+                </p>
+                <p>R$ 3.000,00</p>
+            </div>
+            <div class="destino" data-preco="4000">
+                <div class="imgPais">
+                    <img src="img/FozDoIguaçu.webp" alt="">
+                </div>
+                <h2>Foz do Iguaçu - Brasil</h2>
+                <p>
+                    5 dias <br><br>
+                    Hotel; <strong>R$ 1.500,00</strong> <br>
+                    Passagem: <strong>R$ 1.950,00</strong><br>
+                    Alimentação: <strong>R$ 550,00</strong>
+                </p>
+                <p>R$ 4.000,00</p>
+            </div>
+            <div class="destino" data-preco="6000">
+                <div class="imgPais">
+                    <img src="img/Salvador.jpg" alt="">
+                </div>
+                <h2>Salvador - Brasil</h2>
+                <p>
+                    5 dias <br><br>
+                    Hotel; <strong>R$ 1.900,00</strong> <br>
+                    Passagem: <strong>R$ 1.950,00</strong><br>
+                    Alimentação: <strong>R$ 850,00</strong>
+                </p>
+                <p>R$ 6.000,00</p>
+            </div>
+            <div class="destino" data-preco="8000">
+                <div class="imgPais">
+                    <img src="img/BA.jpg    " alt="">
+                </div>
+                <h2>Buenos Aires - Argentina</h2>
+                <p>
+                    5 dias <br><br>
+                    Hotel; <strong>R$ 2.500,00</strong> <br>
+                    Passagem: <strong>R$ 2.950,00</strong><br>
+                    Alimentação: <strong>R$ 1.550,00</strong>
+                </p>
+                <p>R$ 8.000,00</p>
+            </div>
+            <div class="destino" data-preco="10000">
+                <div class="imgPais">
+                    <img src="img/SaoPaulo.jpeg" alt="">
+                </div>
+                <h2>Santiago - Chile</h2>
+                <p>
+                    5 dias <br><br>
+                    Hotel; <strong>R$ 3.500,00</strong> <br>
+                    Passagem: <strong>R$ 2.950,00</strong><br>
+                    Alimentação: <strong>R$ 1.550,00</strong>
+                </p>
+                <p>R$ 10.000,00</p>
+            </div>
+            <div class="destino" data-preco="12000">
+                <div class="imgPais">
+                    <img src="img/Lisboa.jpeg" alt="">
+                </div>
+                <h2>Lisboa - Portugal</h2>
+                <p>
+                    7 dias <br><br>
+                    Hotel; <strong>R$ 3.500,00</strong> <br>
+                    Passagem: <strong>R$ 4.950,00</strong><br>
+                    Alimentação: <strong>R$ 2.550,00</strong>
+                </p>
+                <p>R$ 12.000,00</p>
+            </div>
+            <div class="destino" data-preco="15000">
+                <div class="imgPais">
+                    <img src="img/NewYork.jpeg" alt="">
+                </div>
+                <h2>Nova York - EUA</h2>
+                <p>
+                    5 dias <br><br>
+                    Hotel; <strong>R$ 6.500,00</strong> <br>
+                    Passagem: <strong>R$ 4.950,00</strong><br>
+                    Alimentação: <strong>R$ 2.550,00</strong>
+                </p>
+                <p>R$ 15.000,00</p>
+            </div>
+            <div class="destino" data-preco="18000">
+                <div class="imgPais">
+                    <img src="img/Paris.jpeg" alt="">
+                </div>
+                <h2>Paris - França</h2>
+                <p>
+                    5 dias <br><br>
+                    Hotel; <strong>R$ 7.500,00</strong> <br>
+                    Passagem: <strong>R$ 5.950,00</strong><br>
+                    Alimentação: <strong>R$ 4.550,00</strong>
+                </p>
+                <p>R$ 18.000,00</p>
+            </div>
+            <div class="destino" data-preco="20000">
+                <div class="imgPais">
+                    <img src="img/Tokyo.jpeg" alt="">
+                </div>
+                <h2>Tóquio - Japão</h2>
+                <p>
+                    5 dias <br><br>
+                    Hotel; <strong>R$ 6.500,00</strong> <br>
+                    Passagem: <strong>R$ 7.950,00</strong><br>
+                    Alimentação: <strong>R$ 5.550,00</strong>
+                </p>
+                <p>R$ 20.000,00</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <p>
+        ------------------------------------------------------by Jorginho, tive um prazo de 2h para fazer isso foi oq eu consegui---------------------------------------------- -----------------------------------------------
+    </p>
+</body>
+</html>
